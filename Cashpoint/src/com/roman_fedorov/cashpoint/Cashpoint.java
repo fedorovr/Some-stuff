@@ -81,7 +81,7 @@ public class Cashpoint {
     public String dump() {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < banknotes.length; i++) {
-            sb.append(banknotes[i]).append("=").append(banknotesCount[i]).append("\n");
+            sb.append(banknotes[i]).append(" ").append(banknotesCount[i]).append("\n");
         }
         return sb.toString();
     }
