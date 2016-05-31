@@ -30,6 +30,8 @@ class Matrix2 {
 
 public class LogPow {
 	public static BigInteger fibonacci(int n) {
+		// ( F_n  ) = ( 0  1 )^n  * ( F_0 )		
+		// ( F_n+1)   ( 1  1 )      ( F_1 )
 		Matrix2 currentMultiplier = new Matrix2(0, 1, 1, 1); // Fibonacci matrix
 		Matrix2 result = new Matrix2(1, 0, 0, 1); // Identity matrix
 		int currentMask = 1;
